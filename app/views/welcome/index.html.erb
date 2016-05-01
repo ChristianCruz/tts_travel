@@ -1,19 +1,30 @@
-<div clas="row">
-  <div class="col s12 section_01">
-    <h1>Welcome to <strong><i>Travolio.</i></strong></h1>
-    <p>Find the best deals to  travel the world!</p>
-    <button>Start here!</button>
+<div class="section_01 valign-wrapper">
+  <div class="container">
+    <div class="row valign">
+      <div class="col s12 center-align">
+          <h1>Welcome to <strong><i>Travolio.</i></strong></h1>
+          <h5>Find the best deals to  travel the world!</h5>
+          <button class="deep-orange accent-2 btn-large btn-flat">Start here!</button>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col s12 section_02">
-    <h2>Oh, you're from <%= @homeland %>!</h2>
-    <h3>My favorite countries are:</h3>
-    <ul>
-      <% @countries.each do |country| %>
-        <li><%= country %></li>
-      <% end %>
-    </ul>
+<div class="section_02 valign-wrapper">
+  <div class="container">
+    <div class="row valign">
+      <div class="col s12">
+        <h3><strong>Places you definitely should visit.</strong></h3>
+        <p class="col s9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ul class="col l12">
+          <% @countries.each do |country| %>
+            <li class="col l3">
+              <%= image_tag country, class: "circle", width: "205", height: "205" %>
+              <small class="center-align">Some country name</small>
+              </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</div> 
